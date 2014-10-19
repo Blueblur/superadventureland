@@ -1,4 +1,4 @@
-superadventureland
+Super Adventure Land
 ==================
 
-A C++ text adventure based entirely around the goto command just to bother people.
+Super Adventure Land is a C++ text adventure based entirely around the goto command just to bother people.
