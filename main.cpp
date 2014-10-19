@@ -371,7 +371,7 @@ int main() {
     city:
     {
         cout << "You're in a small city now." << endl;
-		cout << "Just across the street is an Apple Store." << endl;
+		cout << "Just across the street is an apple store." << endl;
 		cout << "Ahead of you is the town hall." endl;
 		cout << "Where will you go?" << endl;
 		cout << "1: Cross the street to the apple store." << endl;
@@ -391,7 +391,20 @@ int main() {
     }
     mountain:
     {
-        cout << "mountain";
+        cout << "You're at the base of a mountain." << endl;
+        cout << "It's much too steep to climb up." << endl;
+        cout << "There's an enterance to a mineshaft." << endl;
+        cout << "What will you do?" << endl;
+        cout << "1: Go down into the mineshaft." << endl;
+        cout << "2: Go back to the field." << endl;
+        if (answer == 1) {
+            goto abandonedMine;
+        } else if (answer == 2) {
+            goto field;
+        } else {
+            cerr << "Invalid Answer." << endl;
+            goto mountain;
+        }
     }
     townHall:
     {
