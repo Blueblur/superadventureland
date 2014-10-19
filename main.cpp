@@ -397,6 +397,7 @@ int main() {
         cout << "What will you do?" << endl;
         cout << "1: Go down into the mineshaft." << endl;
         cout << "2: Go back to the field." << endl;
+        cin >> answer;
         if (answer == 1) {
             goto abandonedMine;
         } else if (answer == 2) {
