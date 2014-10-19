@@ -372,7 +372,7 @@ int main() {
     {
         cout << "You're in a small city now." << endl;
 		cout << "Just across the street is an apple store." << endl;
-		cout << "Ahead of you is the town hall." endl;
+		cout << "Ahead of you is the town hall." << endl;
 		cout << "Where will you go?" << endl;
 		cout << "1: Cross the street to the apple store." << endl;
 		cout << "2: Go up the street to the town hall." << endl;
