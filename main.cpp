@@ -317,7 +317,7 @@ int main() {
     {
         cout << "You are going down a river." << endl;
         cout << "You swim to shore when you see civilization." << endl;
-        cout << "You walk into the large city." << endl;
+        cout << "You walk into the small city." << endl;
         goto city;
     }
     shore:
@@ -344,7 +344,7 @@ int main() {
     {
         cout << "You are in a forest." << endl;
         cout << "You see something behind you." << endl;
-        cout << "01101000 01110100 01110100 01110000 00111010 00101111 00101111 01100110 01101111 01110010 01110101 01101101 00101110 01100010 01101100 01101111 01100011 01101011 01101100 01100001 01101110 01100100 00101110 01110101 01110011 00101111 01101001 01101110 01100100 01100101 01111000 00101110 01110000 01101000 01110000" << endl;
+        cout << "It's a dude with a knife!" << endl;
         goto dead;
     }
     field:
@@ -354,7 +354,7 @@ int main() {
         cout << "To your left is a hill with a cave in the side." << endl;
         cout << "Where do you want to go?" << endl;
         cout << "1: Go into the cave." << endl;
-        cout << "2: Go to the mountain" << endl;
+        cout << "2: Go to the mountain." << endl;
         cout << "3: Go back to the lake's shore." << endl;
         cin >> answer;
         if (answer == 1) {
@@ -370,7 +370,24 @@ int main() {
     }
     city:
     {
-        cout << "city";
+        cout << "You're in a small city now." << endl;
+		cout << "Just across the street is an Apple Store." << endl;
+		cout << "Ahead of you is the town hall." endl;
+		cout << "Where will you go?" << endl;
+		cout << "1: Cross the street to the apple store." << endl;
+		cout << "2: Go up the street to the town hall." << endl;
+		cout << "3: Walk back down the river to the lake." << endl;
+		cin >> answer;
+		if (answer == 1) {
+			goto appleStore;
+		} else if (answer == 2) {
+			goto townHall;
+		} else if (answer == 3) {
+			goto lake;
+		} else {
+			cerr << "Invalid Answer." << endl;
+			goto city;
+		}
     }
     mountain:
     {
