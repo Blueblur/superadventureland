@@ -371,23 +371,23 @@ int main() {
     city:
     {
         cout << "You're in a small city now." << endl;
-		cout << "Just across the street is an apple store." << endl;
-		cout << "Ahead of you is the town hall." << endl;
-		cout << "Where will you go?" << endl;
-		cout << "1: Cross the street to the apple store." << endl;
-		cout << "2: Go up the street to the town hall." << endl;
-		cout << "3: Walk back down the river to the lake." << endl;
-		cin >> answer;
-		if (answer == 1) {
-			goto appleStore;
-		} else if (answer == 2) {
-			goto townHall;
-		} else if (answer == 3) {
-			goto lake;
-		} else {
-			cerr << "Invalid Answer." << endl;
-			goto city;
-		}
+	cout << "Just across the street is an apple store." << endl;
+	cout << "Ahead of you is the town hall." << endl;
+	cout << "Where will you go?" << endl;
+	cout << "1: Cross the street to the apple store." << endl;
+	cout << "2: Go up the street to the town hall." << endl;
+	cout << "3: Walk back down the river to the lake." << endl;
+	cin >> answer;
+	if (answer == 1) {
+		goto appleStore;
+	} else if (answer == 2) {
+		goto townHall;
+	} else if (answer == 3) {
+		goto lake;
+	} else {
+		cerr << "Invalid Answer." << endl;
+		goto city;
+	}
     }
     mountain:
     {
