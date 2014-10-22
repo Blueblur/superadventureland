@@ -449,7 +449,7 @@ int main() {
 		} else if (answer == 2) {
 			cout << "Instead of giving you directions, the person at the desk shoots you." << endl;
 			cout << "He drags your body into the back to sacrifice your soul to Steve Jobs." << endl;
-			cout << "'Have a nice day.'"
+			cout << "'Have a nice day.'" << endl;
 			goto dead;
 		} else if (answer == 3) {
 			goto city;
