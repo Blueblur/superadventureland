@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 
+// Super Adventure Land by Hunter "Blueblur" Connelly
+// Git repo located at http://github.com/blueblur/superadventureland.git
+
 using namespace std;
 int answer;
 
@@ -428,7 +431,32 @@ int main() {
 	}
 	appleStore:
 	{
-		cout << "appleStore";
+		cout << "You're in an apple store." << endl;
+		cout << "The walls are lined with $4000 computers." << endl;
+		cout << "The new Macbook Pro 19.5 all the way in the back costs $8000 and one kidney." << endl;
+		cout << "Someone is sitting in the corner playing flappy bird on their new iPhone 9 ++." << endl;
+		cout << "Clearly that person is too poor to afford the new iPhone 10 that came out a month after the 9." << endl;
+		cout << "What do you do?" << endl;
+		cout << "1: Buy the new Macbook Pro 19.5." << endl;
+		cout << "2: Ask the person at the desk for directions to the Microsoft store." << endl;
+		cout << "3: Leave." << endl;
+		cin >> answer;
+		if (answer == 1) {
+			cout << "You give the person at the desk $8000 and gouge out your kidney with a knife." << endl;
+			cout << "You then sit down to use your new Macbook Pro." << endl;
+			cout << "You die because you only had one kidney left after you bought the previous Macbook Pro 19." << endl;
+			goto dead;
+		} else if (answer == 2) {
+			cout << "Instead of giving you directions, the person at the desk shoots you." << endl;
+			cout << "He drags your body into the back to sacrifice your soul to Steve Jobs." << endl;
+			cout << "'Have a nice day.'"
+			goto dead;
+		} else if (answer == 3) {
+			goto city;
+		} else {
+			cerr << "Invalid Answer." << endl;
+			goto appleStore;
+		}
 	}
 	cave:
 	{
