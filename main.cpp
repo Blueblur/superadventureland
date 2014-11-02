@@ -510,7 +510,7 @@ int main() {
 			cout << "As you print more money, inflation skyrockets." << endl;
 			cout << "A loaf of bread costs $1000." << endl;
 			goto ruins;
-		} else if (answer == 3 {
+		} else if (answer == 3) {
 			cout << "A terrorist group of angry students assasinate you." << endl;
 			goto dead;
 		} else {
