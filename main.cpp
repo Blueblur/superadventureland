@@ -493,11 +493,43 @@ int main() {
 	}
 	mayorsOffice:
 	{
-		cout << "mayors office";
+		cout << "You go to the meeting, which is taking place in the mayor's office." << endl;
+		cout << "'Mr. Mayor! You're late!' says one of the men sitting at the conference table." << endl;
+		cout << "'That doesn't matter, let's focus on the problem at hand.' says another." << endl;
+		cout << "'So, we're running out of Money. What should we do?'" << endl;
+		cout << "What do you say?" << endl;
+		cout << "1: 'We should raise taxes.'" << endl;
+		cout << "2: 'We should print more money!'" << endl;
+		cout << "3: 'We should stop spending money on public education.'" << endl;
+		cin >> answer;
+		if (answer == 1) {
+			cout << "Suddenly, there's a riot outside." << endl;
+			cout << "The rioting citizens break down the doors and kill everyone in the building." << endl;
+			goto dead;
+		} else if (answer == 2) {
+			cout << "As you print more money, inflation skyrockets." << endl;
+			cout << "A loaf of bread costs $1000." << endl;
+			goto ruins;
+		} else if (answer == 3 {
+			cout << "A terrorist group of angry students assasinate you." << endl;
+			goto dead;
+		} else {
+			
+		}
 	}
 	ruins:
 	{
-		cout << "ruins";
+		cout << "The city can no longer support itself." << endl;
+		cout << "It descends into total anarchy." << endl;
+		cout << "Over time, the city started falling apart." << endl;
+		cout << "You stand on a mountain overlooking the ruins of what once was a unified city." << endl;
+		cout << "Now, it was nothing but fire, chaos, and ruins." << endl;
+		cout << "And you wonder." << endl;
+		cout << "You wonder what happened to the city's true mayor." << endl;
+		cout << "You wonder what you could've done to prevent this." << endl;
+		cout << "And you wonder what others see when they see what this city has become." << endl;
+		cout << "And then someone stabs you and steals your wallet." << endl;
+		goto dead;
 	}
 	abandonedMine:
 	{
