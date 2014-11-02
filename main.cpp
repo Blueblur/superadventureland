@@ -460,7 +460,36 @@ int main() {
 	}
 	cave:
 	{
-		cout << "cave";
+		cout << "You're in a cave." << endl;
+		cout << "The way you got in is much too steep to climb back out." << endl;
+		cout << "There is a large circle on the floor with strange markings all over it." << endl;
+		cout << "The cave seems to go on forever ahead of you." << endl;
+		cout << "You notice faint whispers that seem to be coming from the marked circle on the floor." << endl;
+		cout << "It's like it's calling you towards it." << endl;
+		cout << "What will you do?" << endl;
+		cout << "1: Step into the circle." << endl;
+		cout << "2: Go around the circle and continue down into the cave." << endl;
+		cout << "3: Call for help and wait." << endl;
+		cin >> answer;
+		if (answer == 1) {
+			cout << "You step into the circle, and the markings start to glow." << endl;
+			cout << "Suddenly you are teleported to a city." << endl;
+			goto city;
+		} else if (answer == 2) {
+			cout << "You go deeper and deeper into the cave." << endl;
+			cout << "You don't know if it will come to an end." << endl;
+			cout << "Eventually, after what seems like hours of wandering, you come to an abandoned mineshaft." << endl;
+			cout << "If this place has a mine, then that means there's an exit around here." << endl;
+			goto abandonedMine; 
+		} else if (answer == 3) {
+			cout << "You call for help, but no one can hear you." << endl;
+			cout << "If you wait long enough though, eventually someone will find you, right?" << endl;
+			cout << "You become unsure that anyone will come to your rescue." << endl;
+			goto cave;
+		} else {
+			cerr << "Invalid Answer." << endl;
+			goto cave;
+		}
 	}
 	mayorsOffice:
 	{
