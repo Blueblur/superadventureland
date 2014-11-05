@@ -514,7 +514,8 @@ int main() {
 			cout << "A terrorist group of angry students assasinate you." << endl;
 			goto dead;
 		} else {
-			
+			cerr << "Invalid Answer." << endl;
+			goto mayorsOffice;
 		}
 	}
 	ruins:
@@ -523,7 +524,7 @@ int main() {
 		cout << "It descends into total anarchy." << endl;
 		cout << "Over time, the city started falling apart." << endl;
 		cout << "You stand on a mountain overlooking the ruins of what once was a unified city." << endl;
-		cout << "Now, it was nothing but fire, chaos, and ruins." << endl;
+		cout << "Now, it's nothing but fire, chaos, and ruins." << endl;
 		cout << "And you wonder." << endl;
 		cout << "You wonder what happened to the city's true mayor." << endl;
 		cout << "You wonder what you could've done to prevent this." << endl;
@@ -533,7 +534,25 @@ int main() {
 	}
 	abandonedMine:
 	{
-		cout << "abandoned mine";
+		cout << "You're in an abandoned mine." << endl;
+		cout << "You can see the exit in the distance." << endl;
+		cout << "You can also see that the mine goes deeper in the other direction." << endl;
+		cout << "What do you do?" << endl;
+		cout << "1: Leave the mine." << endl;
+		cout << "2: Go deeper." << endl;
+		cin >> answer;
+		if (answer == 1) {
+			goto mountain;
+		} else if (answer == 2) {
+			cout << "You start going deeper into the mine!" << endl;
+			cout << "You find a metric crapton of diamonds and gold! :D" << endl;
+			cout << "But the mine caves in! D:" << endl;
+			cout << "You're trapped forever inside this cave with the treasure you found." << endl;
+			goto dead;
+		} else {
+			cerr << "Invalid Answer." << endl;
+			goto abandonedMine;
+		}
 	}
 	pit:
 	{
