@@ -554,10 +554,6 @@ int main() {
 			goto abandonedMine;
 		}
 	}
-	pit:
-	{
-		cout << "pit";
-	}
 	dead:
 	{
 		cout << "Would you like to restart the game or quit?" << endl;
