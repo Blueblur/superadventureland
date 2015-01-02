@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-
 // Super Adventure Land by Hunter "Blueblur" Connelly
 // Git repo located at http://github.com/blueblur/superadventureland.git
+// Version is 1.0.0
 
 using namespace std;
 int answer;
